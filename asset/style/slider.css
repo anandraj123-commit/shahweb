@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Slider Container */
+  .slider {
+    width: 800px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  /* Slides */
+  .slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+  }
+  
+  /* Individual Slide */
+  .slide {
+    width: 100%;
+    transition: 0.6s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Automatic Navigation Dots */
+  .navigation-auto {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .navigation-auto div {
+    border: 2px solid #fff;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .navigation-auto div:hover {
+    background-color: #fff;
+  }
+  
+  /* Manual Navigation */
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;
+  }
+  
+  .manual-btn:hover {
+    background-color: #fff;
+  }
+  
